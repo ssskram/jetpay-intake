@@ -5,23 +5,22 @@
     background: rgba(0, 0, 0, .7);
 }
 
-.react-datepicker__portal {
-    background-color: rgba(26, 36, 47, .9);
-}
-
 .custom-modal {
     z-index: 100000 !important;
     margin: 0 auto !important;
-    background: transparent;
+    background: #fff;
     max-height: 100vh;
     min-width: 350px;
     overflow-x: hidden;
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0);
+    overflow-y: scroll;
+    margin-top: 25px !important;
+    padding: 35px;
 }
 
 .styles_closeButton__20ID4 {
     padding: 7px;
-    margin-top: -5px;
+    top: 0 !important;
+    right: 0 !important;
 }
 
 /* Spinner

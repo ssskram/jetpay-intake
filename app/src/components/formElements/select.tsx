@@ -2,14 +2,16 @@ import * as React from 'react'
 import Select from 'react-select'
 
 type props = {
-    value: string
+    value: select
     placeholder: string
     header: string
     required: boolean
     options: Array<object>
     multi: boolean
-    onChange: (selects: string) => void
+    onChange: (selects: any) => void
 }
+
+type select = { label: string, value: string}
 
 export default class SelectElement extends React.Component<props, {}> {
     
@@ -17,7 +19,7 @@ export default class SelectElement extends React.Component<props, {}> {
         return (
             <div className="form-group">
                 <div className="col-md-12 form-element">
-                    <h5 className="form-h4">{this.props.header}{this.props.required == true && <span style={{ color: 'red', fontSize: '20' }}>*</span>}</h5>
+                    <h5 className="form-h4" style={{color: '#fff'}}>{this.props.header}{this.props.required == true && <span style={{ color: 'red', fontSize: '20' }}>*</span>}</h5>
                     <Select
                         placeholder={this.props.placeholder}
                         value={this.props.value}

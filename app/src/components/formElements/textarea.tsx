@@ -5,7 +5,7 @@ type props = {
     placeholder: string
     header: string
     required: boolean
-    callback: (value: string) => void
+    callback: (value: any) => void
 }
 
 export default class Textarea extends React.Component<props, any> {
@@ -34,7 +34,7 @@ export default class Textarea extends React.Component<props, any> {
         return (
             <div className="form-group">
                 <div className="col-md-12 form-element">
-                    <h5>{this.props.header}{this.props.required == true && <span style={{ color: 'red', fontSize: '20' }}>*</span>}</h5>
+                    <h5 style={{color: '#fff'}}>{this.props.header}{this.props.required == true && <span style={{ color: 'red', fontSize: '20' }}>*</span>}</h5>
                     <textarea
                         onKeyUp={this.setHeight.bind(this)}
                         onFocus={this.setHeight.bind(this)}

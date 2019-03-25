@@ -5,7 +5,7 @@ type props = {
     placeholder: string
     header: string
     required: boolean
-    callback: (value: string) => void
+    callback: (value: any) => void
 }
 
 export default class Input extends React.Component<props, {}> {
@@ -14,7 +14,7 @@ export default class Input extends React.Component<props, {}> {
         return (
             <div className="form-group">
                 <div className="col-md-12 form-element">
-                    <h5 className="form-h4">{this.props.header}{this.props.required == true && <span style={{color: 'red', fontSize: '20'}}>*</span>}</h5>
+                    <h5 className="form-h4" style={{color: '#fff'}}>{this.props.header}{this.props.required == true && <span style={{color: 'red', fontSize: '20'}}>*</span>}</h5>
                     <input type='search'
                         className='form-control'
                         value={this.props.value}

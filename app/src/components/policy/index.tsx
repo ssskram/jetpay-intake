@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Document, Page } from 'react-pdf'
 import Paging from '../utilities/paging'
+import Spinner from '../utilities/spinner'
 
 type state = {
     numPages: number
@@ -40,6 +41,7 @@ export default class Policy extends React.Component<{}, state> {
                         className='center-me'
                         file="files/Policy.pdf"
                         onLoadSuccess={this.onDocumentLoadSuccess}
+                        loading={<Spinner notice='...loading document...'/>}
                     >
                         <Page
                             pageNumber={pageNumber}
