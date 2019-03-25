@@ -23,6 +23,7 @@
     "react-helmet": "^5.2.0",
     "react-json-editor-ajrm": "^2.5.9",
     "react-kawaii": "^0.11.0",
+    "react-pdf": "^4.0.5",
     "react-redux": "^5.1.0",
     "react-responsive-modal": "^3.5.0",
     "react-router-bootstrap": "^0.24.4",

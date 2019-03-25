@@ -18,6 +18,7 @@
     background-image: -webkit-linear-gradient(top, black 0%, black 100%) !important;
     background-color: black !important;
     border-color: black !important;
+    padding-top: 5px;
 }
 
 .navbar-fixed-top {
@@ -33,6 +34,7 @@
     text-overflow: ellipsis !important;
     height: auto !important;
     font-size: 2em;
+    margin-top: 3px;
 }
 
 .nav-glyphicon {
