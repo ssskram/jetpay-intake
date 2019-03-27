@@ -17,7 +17,7 @@ export default async function post(request, user) {
             request.listComputers)) // 6
 
     const args = {
-        to: user,
+        to: 'jetpayhelp@pittsburghpa.gov',
         user: user,
         subject: 'JetPay: New Reader Request',
         email: emailBody,
