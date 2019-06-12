@@ -1,5 +1,9 @@
 # Jetpay Intake
 
+Jetpay Intake is used by the Department of Finance at the City of Pittsburgh to handle new requests for credit card readers used throughout City services.
+
+New requests are forwarded via [Sendgrid](https://github.com/CityofPittsburgh/sendgrid-proxy) directly to [JetPay](https://www.jetpay.com/), the payment service provider used by the City.
+
 <img src='screenshot.png' width='100%' />
 
 ## A note on boilerplate
@@ -13,9 +17,9 @@ This README will focus only on the components of this application that are uniqu
     app
     ├── src                         
         ├── components        
-            |── home                # Loads the store, returns map & table of events
-        ├── store                   
-            |── events              # persists 48 hours of login events originating from outside of PA
+            |── faq         # Frequently asked questions of Jetpay
+            |── form        # Intake form and post functions
+            |── policy      # City policy for credit card readers
 
 ## Running Locally
 
